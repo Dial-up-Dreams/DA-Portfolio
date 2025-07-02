@@ -1,0 +1,191 @@
+:root {
+    --header-image: url('https://64.media.tumblr.com/01fb78fdbff613fc3bc5b6bbd66da232/9eca8a233fcd2538-01/s2048x3072/327dcb809e2e45d18d5981dd8f44401a040c25e3.jpg');
+    --body-bg-image: url('https://i.pinimg.com/736x/47/f3/c7/47f3c726f71c015696d865fc801e030f.jpg');
+
+    /* colors */
+    --content: #4a3535;
+}
+
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Cambria', 'Franklin Gothic Book';
+    margin: 0;
+    background-color: #08031A;
+    background-size: 70px;
+    color: #fceaff;
+    background-image: var(--body-bg-image);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#container a {
+    color: #d4b59b;
+    font-weight: bold;
+
+}
+
+#header {
+    width: 100%;
+    background-color: #d0c7ea;
+    height: 150px;
+    background-image: var(--header-image);
+    background-size: 100%;
+}
+
+#navbar {
+    height: 40px;
+    background-color: #352315;
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    padding-top: 10px;
+}
+
+#navbar li a {
+    color: #bc9574;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: #c37d21;
+    text-decoration: underline;
+}
+
+#flex {
+    display: flex;
+}
+
+aside {
+    background-color: #1f312e;
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+}
+
+
+main {
+    background-color: #69412b;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+
+*/ #leftSidebar {
+    order: 1;
+}
+
+#rightSidebar {
+    order: 3;
+}
+
+footer {
+    background-color: #1a0d04;
+    width: 100%;
+    height: 85px;
+    padding: 10px;
+    text-align: center;
+    background-image: url(https://64.media.tumblr.com/2d8028c7ee10bebaea1fb650b0ebc274/d6793dcf1be55871-33/s2048x3072/8adc6d771b0a68e5ade00fe6f49178b0ea3ae267.pnj);
+    background-repeat: repeat-x;
+    background-size: 50%;
+
+}
+
+h1,
+h2,
+h3 {
+    color: #d4b59b;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+strong {
+    color: #d4b59b;
+}
+
+.box {
+    background-color: #381f0e;
+    border: 1px solid #d4b59b;
+    padding: 10px;
+}
+
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: #13092D;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+
+}
